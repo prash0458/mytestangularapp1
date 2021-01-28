@@ -1,0 +1,15 @@
+<p>order-list works!</p>
+
+<app-order-list-item *ngFor="let order of orderlist" [orderItem]="order" 
+    (ouputaddEventEmitter) = "onadd($event)"
+    (ouputdeleteEventEmitter) = "ondelete($event)">
+</app-order-list-item>
+
+<!--
+<div *ngFor="let order of orderlist">
+    <div> {{ order.orderid + " " + order.customerid  + " " }}
+          {{ order.orderdate | date:'MM/dd/yyyy' }}
+          {{ order.orderamount  + " " + order.ordername  + " " + order.orderdesc + " "  }}
+    </div>
+</div>
+-->

@@ -1,0 +1,6 @@
+<p>employee-list works!</p>
+
+<app-employee-list-item *ngFor="let emp of employeelist" [empInput]="emp" 
+    (deleteoutputeventemitter) = "ondelete($event)"></app-employee-list-item>
+
+

@@ -1,0 +1,11 @@
+<p>order-detail works!</p>
+
+<form #ngform="ngForm" (submit)="onsubmit()">
+    <div><input placeholder="orderid" id="orderid" name ="orderid" [(ngModel)]="orderservice.ordermodel.orderid"></div>
+    <div><input placeholder="ordername"  id="ordername" name ="ordername" [(ngModel)]="orderservice.ordermodel.ordername"></div>
+    <div><input placeholder="orderdesc"  id="orderdesc" name ="orderdesc" [(ngModel)]="orderservice.ordermodel.orderdesc"></div>
+    <div><input placeholder="orderamount"  id="orderamount" name ="orderamount" [(ngModel)]="orderservice.ordermodel.orderamount"></div>
+    <div><input placeholder="orderdate"  id="orderdate" name ="orderdate" [(ngModel)]="orderservice.ordermodel.orderdate"></div>
+    
+    <div><button type="submit" >submit</button></div>
+</form>

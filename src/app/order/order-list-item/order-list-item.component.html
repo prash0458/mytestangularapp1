@@ -1,0 +1,9 @@
+
+
+<div><button (click)="getbyid(orderItem.orderid)">show</button>
+    {{ orderItem.orderid + " " + orderItem.customerid  + " " }}
+    {{ orderItem.orderdate | date:'MM/dd/yyyy' }}
+    {{ orderItem.orderamount  + " " + orderItem.ordername  + " " + orderItem.orderdesc + " "  }}
+    <button (click)="ondelete(orderItem)" >delete</button>
+    <button (click)="onadd(orderItem)" >add</button>
+</div>

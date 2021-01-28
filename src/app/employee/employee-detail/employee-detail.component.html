@@ -1,0 +1,8 @@
+<p>employee-detail works!</p>
+<form #ngformtest="ngForm" (submit)="OnSubmit(ngformtest)">
+    <div><input id="firstname" name="firstname"  [(ngModel)]="employeeService.employeemodel.firstname" placeholder="first name"></div>
+    <div><input id="lastneme" name="lastname"  [(ngModel)]="employeeService.employeemodel.lastname" placeholder="last name"></div>
+    <div><input id="age" name="age"  [(ngModel)]="employeeService.employeemodel.age" placeholder="age"></div>
+
+    <button type="submit">submit</button>
+</form>

@@ -1,0 +1,2 @@
+<app-customerlist-item  *ngFor="let customer of customerlist"  
+        [customerInput]="customer" (deleteOutputEventEmitter)="ondelete($event)"  ></app-customerlist-item>

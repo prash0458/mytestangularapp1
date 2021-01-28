@@ -1,0 +1,10 @@
+<p>customer-detail works!</p>
+<form #form="ngForm" class="form" (ngSubmit)="OnSubmit(form)">
+
+  <div> <input id="firstname" name="firstname" [(ngModel)]="customerService.customermodel.customerfirstname" placeholder="first name">{{customerService.customermodel.customerfirstname}}</div>
+  <div><input id="lastname" name="lastname" [(ngModel)]="customerService.customermodel.customerlastname"  placeholder="last name"></div> 
+  <div>  <input id="age" name="age"  [(ngModel)]="customerService.customermodel.customerage"  placeholder="age"></div>
+    
+    <button type="submit" >submit</button>
+
+</form>
